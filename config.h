@@ -36,7 +36,7 @@ static Bool npisrelative  = False;
 
 
 #define MODKEY ControlMask
-static Key keys[] = {
+static const Key keys[] = {
 	/* modifier             key           function     argument */
 	{ MODKEY|Mod1Mask ,     XK_Return,    focusonce,   { 0 } },
 	{ MODKEY|Mod1Mask ,     XK_Return,    spawn,       { 0 } },
@@ -69,7 +69,7 @@ static Key keys[] = {
 	{ Mod1Mask ,            XK_Control_L, showbar,     { .i = 1 } },
 };
 
-static Key keyreleases[] = {
+static const Key keyreleases[] = {
 	/* modifier             key             function     argument */
 	{ MODKEY|Mod1Mask ,     XK_Alt_L,     showbar,     { .i = 0 } },
 	{ MODKEY|Mod1Mask ,     XK_Control_L,   showbar,     { .i = 0 } },
